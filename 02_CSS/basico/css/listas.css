@@ -1,0 +1,10 @@
+#lista-nao-ordenada {
+    /* disc | circle | square | none */
+    list-style: disc;
+    list-style-image: url(../img/logo-16.png);
+}
+
+#lista-ordenada{
+    /* none | decimal | decimal-leading-zero | lower-roman | upper-roman| lower-alpha*/
+    list-style: decimal-leading-zero;
+}

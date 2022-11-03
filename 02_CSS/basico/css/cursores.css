@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: #EEE;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+}
+
+li {
+    background-color: #CCEAFF;
+    border: 1px solid #5CA8EF;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    /* default (padrão) | pointer | crosshair | help |  */
+    /* cursor: pointer; */
+    cursor: url('./../img/logo-16.png'), pointer;
+}
+
+ol {
+    padding: 30px;
+    list-style: upper-alpha;
+}

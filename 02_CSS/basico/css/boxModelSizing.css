@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#primeira{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border: 10px solid black;
+    background-color: blue;
+    /* content-box (Padrão) | border-box */
+    box-sizing: border-box;
+}
+
+#segunda{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+
+

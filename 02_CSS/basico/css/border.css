@@ -1,0 +1,22 @@
+#primeira{
+    height: 100px;
+    /* background-color: blue; */
+}
+
+#segunda{
+    height: 100px;
+    border-width: 5px;
+    /* solid | dotted | dashed */
+    border-style: dashed;
+    border-color: red yellow green blue;
+    border-radius: 15px;
+}
+
+#terceira{
+    height: 100px;
+    /* background-color: green; */
+}
+
+p {
+    border: 3px solid aqua;
+}
