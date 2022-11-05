@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form method="GET" action="/cadastro">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome">
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha">
+        <br>
+        <label for="curso">Escolha seus cursos:</label><br>
+        <input type="checkbox" name="curso" value="op1">React Native<br>
+        <input type="checkbox" name="curso" value="op1">React Js<br>
+        <br>
+        <label for="sexo">Sexo:</label><br>
+        <input type="radio" name="sexo" value="M">Masc<br>
+        <input type="radio" name="sexo" value="F">Fem<br>
+        <br>
+        <label for="estado">Selecione seu estado:</label><br>
+        <select name="estado">
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+            <option value="SC">Santa Catarina</option>
+        </select>
+        <br><br>
+        <label for="assunto">Caixa de texto:</label><br>
+        <textarea name="assunto" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        <label for="cor">Cor:</label>
+        <input type="color" name="cor">
+        <br><br>
+        <label for="data">Data:</label><br>
+        <input type="datetime-local" name="data">
+        <br><br>
+        <label for="arquivo">Arquivo</label>
+        <input type="file" name="arquivo">
+        <br><br>
+        <label for="numero">Número</label>
+        <input type="number" name="numero" min="1" max="10">
+        <br><br>
+        <label for="range">Range</label>
+        <input type="range" name="range" min="10" max="20">
+        <br><br>
+        <label for="telefone">Telefone:</label>
+        <input for="tel" name="telefone"></input>
+        <br><br>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
