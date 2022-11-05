@@ -79,3 +79,8 @@ figure {
 figure>img {
     width: 100%;
 }
+
+.footer {
+    background-color: #333;
+    height: 100px;
+}
