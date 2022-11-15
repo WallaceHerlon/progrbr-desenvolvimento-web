@@ -1,0 +1,5 @@
+img {
+    width: 420px;
+    /*transform: scale();*/
+    transform: skew(-45deg);
+}

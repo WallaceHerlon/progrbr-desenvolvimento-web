@@ -1,0 +1,31 @@
+.class-name {
+    /*corresponde ao elemento da classe*/
+}
+
+#id-name {
+    /*corresponde ao elemento id*/
+}
+
+div {
+    /*corresponde todos elementos da tag*/
+}
+
+[width] {
+    /*seletor baseados no valor de seus atributos*/
+}
+
+* {
+    /*corresponde todos os elementos da página*/
+}
+
+header > p {
+    /*seleciona nós que são filho diretos do pai*/
+}
+
+header + p  {
+    /*seleciona os nós que segue imediatamente especifico do pai*/
+}
+
+header ~ p  {
+    /*seleciona os nós que seguem (não necessariamente imediatamente) o elemento especificado anteriormente, se ambos os elementos compartilham o mesmo pai.*/
+}
