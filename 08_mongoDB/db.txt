@@ -1,0 +1,14 @@
+Monstrar todos bancos de dados:
+ -> show dbs
+
+ Verifica qual banco está.
+ -> db
+
+ Cria uma coleção:
+ -> db.createCollection('NomeDacolecao')
+
+ Para apagar uma coleção.
+ -> db.dropDatabase() ou db.nomeDaColecao()
+
+ Para entra no banco.
+ -> use meubanco
