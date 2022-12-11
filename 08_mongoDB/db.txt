@@ -1,4 +1,4 @@
-Monstrar todos bancos de dados:
+Mostrar todos bancos de dados:
  -> show dbs
 
  Verifica qual banco está.
@@ -8,7 +8,27 @@ Monstrar todos bancos de dados:
  -> db.createCollection('NomeDacolecao')
 
  Para apagar uma coleção.
- -> db.dropDatabase() ou db.nomeDaColecao()
+    //quando estive no banco de dados em uso
+ -> db.dropDatabase()
+    // deleta estando na raiz
+ -> db.nomeDaColecao.drop()
 
  Para entra no banco.
  -> use meubanco
+
+ Criando documento
+ -> db.users.inserOne({name:"Wallace", email:"wherlon@hotmail.com"})
+
+ -> db.users.insertMany([{name:"José"}, {Name:"Pedro"}])
+
+Selecionando todos documentos
+-> db.users.find()
+
+Retorna o primeiro registro
+-> db.users.findOne()
+
+Retorna o limite de registro selecionado
+-> db.users.find().limit(2)
+
+Atualizando registro inserindo informação já existente
+-> db.users.updateOne({name:"Marcela"}, {$set:{tel:"1122334455"}})
