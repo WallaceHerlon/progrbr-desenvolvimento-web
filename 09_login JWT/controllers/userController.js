@@ -1,11 +1,16 @@
-const User = require('../models/User')
+const User = require('../models/User');
+const bcrypt = require('bcryptjs');
 
 const userController = {
     register: async function register(req, res) {
-        const user = new User ({
+
+        const selectedUser = await User.findOne({ email: req.body.email })
+        if (selectedUser) return res.status(400).send('Email already exists')
+
+        const user = new User({
             name: req.body.name,
-            email: req. body.emal,
-            password: req.body.password
+            email: req.body.emal,
+            password: bcrypt.hashSync(req.body.password)
         })
 
         try {
@@ -15,10 +20,15 @@ const userController = {
             res.status(400).send(error)
         }
     },
-    login: function login(req, res) {
-        console.log('Login');
-        res.send('Login');
+    login: async function login(req, res) {
+        const selectedUser = await User.findOne({ email: req.body.email })
+        if (!selectedUser) return res.status(400).send('Email or password incorrect')
+
+        const passwordAndUserMatch = bcrypt.compareSync(req.body.password, selectedUser.password)
+        if (!passwordAndUserMatch) return res.status(400).send('Email or password incorrect')
+
+        res.send("User Logged")
     }
 }
 
-module.exports =  userController 
+module.exports = userController 
